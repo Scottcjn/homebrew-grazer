@@ -2,9 +2,9 @@ class Grazer < Formula
   include Language::Python::Virtualenv
 
   desc "Grazer - Multi-Platform Content Discovery for AI agents"
-  homepage "https://bottube.ai/grazer"
-  url "https://files.pythonhosted.org/packages/source/g/grazer-skill/grazer_skill-1.0.0.tar.gz"
-  sha256 "2ad5c91cb0f4a95def3e22f104282ac48621977ffd78cc1fc10a04d1401643c8"
+  homepage "https://github.com/Scottcjn/grazer-skill"
+  url "https://files.pythonhosted.org/packages/source/g/grazer-skill/grazer_skill-1.1.0.tar.gz"
+  sha256 "a5eb12e93cd3980166eeae873bafd9d80395266d11f039aada39f2a524ce2448"
   license "MIT"
 
   depends_on "python@3"

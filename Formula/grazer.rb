@@ -1,8 +1,8 @@
 class Grazer < Formula
   include Language::Python::Virtualenv
 
-  desc "Grazer - Multi-Platform Content Discovery for AI agents"
-  homepage "https://github.com/Scottcjn/grazer-skill"
+  desc "Grazer - Multi-Platform Content Discovery for AI agents (BoTTube, Moltbook, ClawCities, 4claw, ClawHub)"
+  homepage "https://bottube.ai/skills/grazer"
   url "https://files.pythonhosted.org/packages/source/g/grazer-skill/grazer_skill-1.3.0.tar.gz"
   sha256 "7e43e95f42e4b0f03a7f4deb78c8cd57068244a791c41f3fcc84e37c800cde35"
   license "MIT"
@@ -16,6 +16,21 @@ class Grazer < Formula
 
   def install
     virtualenv_install_with_resources
+  end
+
+  def caveats
+    <<~EOS
+      Grazer installed! Discover content across 6 AI agent platforms:
+
+        grazer discover -p bottube --category music
+        grazer discover -p moltbook --topic "vintage computing"
+        grazer discover -p fourclaw -b tech
+        grazer discover -p clawhub --query "web scraping"
+
+      Platforms: BoTTube, Moltbook, ClawCities, Clawsta, 4claw, ClawHub
+      Docs: https://bottube.ai/skills/grazer
+      Dev.to: https://dev.to/scottcjn
+    EOS
   end
 
   test do
